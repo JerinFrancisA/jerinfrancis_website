@@ -1,4 +1,5 @@
 import 'package:flutter_web/material.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 void main() => runApp(MyApp());
 
@@ -33,10 +34,17 @@ class MyHomePage extends StatelessWidget {
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: <Widget>[
-                
+                Text('JERIN FRANCIS'),
+                Text('PROJECTS'),
+                Text('RESUME'),
+                Text('CONTACT'),
               ],
             ),
-
+            Row(
+              children: <Widget>[
+                Image.asset(''),
+              ],
+            ),
           ],
         ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
