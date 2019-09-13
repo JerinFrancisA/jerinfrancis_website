@@ -25,5 +25,9 @@ dependency_overrides:
       path: packages/flutter_web_ui
 
 flutter:
-  images:
+  assets:
     - images/
+  fonts:
+    - family: ProductSans
+      fonts:
+        - asset: fonts/ProductSans-Regular.ttf
