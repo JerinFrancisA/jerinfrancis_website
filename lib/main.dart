@@ -46,7 +46,7 @@ class MyHomePage extends StatelessWidget {
               flex: 7,
               child: Row(
                 children: <Widget>[
-                  Image.asset(''),
+                  Image.asset('images/me.jpg'),
                   Column(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
