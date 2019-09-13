@@ -1,5 +1,4 @@
 import 'package:flutter_web/material.dart';
-import 'package:animated_text_kit/animated_text_kit.dart';
 
 void main() => runApp(MyApp());
 
@@ -31,19 +30,47 @@ class MyHomePage extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Row(
-              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-              children: <Widget>[
-                Text('JERIN FRANCIS'),
-                Text('PROJECTS'),
-                Text('RESUME'),
-                Text('CONTACT'),
-              ],
+            Expanded(
+              flex: 1,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Text('JERIN FRANCIS'),
+                  Text('PROJECTS'),
+                  Text('RESUME'),
+                  Text('CONTACT'),
+                ],
+              ),
             ),
-            Row(
-              children: <Widget>[
-                Image.asset(''),
-              ],
+            Expanded(
+              flex: 7,
+              child: Row(
+                children: <Widget>[
+                  Image.asset(''),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: <Widget>[
+                      Text('Hey! I\'m Jerin Francis'),
+                      Text('App Developer'),
+                      Text('Student of Ramaiah Institute of Technology'),
+                    ],
+                  ),
+                ],
+              ),
+            ),
+            Expanded(
+              flex: 1,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                children: <Widget>[
+                  Text('a'),
+                  Text('a'),
+                  Text('a'),
+                  Text('a'),
+                  Text('a'),
+                  Text('a'),
+                ],
+              ),
             ),
           ],
         ),
