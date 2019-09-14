@@ -24,10 +24,10 @@ dependency_overrides:
       url: https://github.com/flutter/flutter_web
       path: packages/flutter_web_ui
 
-flutter:
-  assets:
-    - images/
-  fonts:
-    - family: ProductSans
-      fonts:
-        - asset: fonts/ProductSans-Regular.ttf
+# flutter:
+#   assets:
+#     - images/
+#   fonts:
+#     - family: GoogleSans
+#       fonts:
+#         - asset: fonts/GoogleSansRegular.ttf
