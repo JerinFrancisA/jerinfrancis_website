@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
           headline: TextStyle(
             letterSpacing: 4.0,
             fontSize: 50.0,
-            fontWeight: FontWeight.bold,
+            fontWeight: FontWeight.w300,
           ),
           title: TextStyle(
             letterSpacing: 3.0,
@@ -72,7 +72,17 @@ class MyHomePage extends StatelessWidget {
                 flex: 6,
                 child: Row(
                   children: <Widget>[
-                    Image.asset('assets/me.jpg'),
+                    Container(
+                      decoration: BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: DecorationImage(
+                          image: AssetImage("assets/me.jpg"),
+                        ),
+                      ),
+                      child: Image(
+                        image: AssetImage("assets/me.jpg"),
+                      ),
+                    ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -85,10 +95,8 @@ class MyHomePage extends StatelessWidget {
                           'App Developer',
                           style: Theme.of(context).textTheme.title,
                         ),
-                        Text(
-                          'Flutter and Dart enthusiast',
-                          style: Theme.of(context).textTheme.title
-                        ),
+                        Text('Flutter and Dart enthusiast',
+                            style: Theme.of(context).textTheme.title),
                         Text(
                           'Student of Ramaiah Institute of Technology',
                           style: Theme.of(context).textTheme.title,
@@ -103,12 +111,15 @@ class MyHomePage extends StatelessWidget {
                 child: Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: <Widget>[
-                    Text('a'),
-                    Text('a'),
-                    Text('a'),
-                    Text('a'),
-                    Text('a'),
-                    Text('a'),
+                    CircleAvatar(
+                      backgroundImage: NetworkImage(
+                          'https://tr3.cbsistatic.com/hub/i/r/2019/06/19/7af60099-f5e9-4273-a29b-cc5ef9332607/resize/1200x/557688f8f4918d630e420ab4124f670b/githero.jpg'),
+                    ),
+                    Text('github'),
+                    Text('linkedin'),
+                    Text('twitter'),
+                    Text('facebook'),
+                    Icon(Icons.add),
                   ],
                 ),
               ),
