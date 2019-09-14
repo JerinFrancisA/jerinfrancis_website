@@ -1,3 +1,5 @@
+import 'dart:html' as html;
+
 import 'package:flutter_web/material.dart';
 
 void main() => runApp(MyApp());
@@ -74,7 +76,7 @@ class MyHomePage extends StatelessWidget {
                   children: <Widget>[
                     Container(
                       decoration: BoxDecoration(
-                        shape: BoxShape.circle,
+                        //shape: BoxShape.circle,
                         image: DecorationImage(
                           image: AssetImage("assets/me.jpg"),
                         ),
@@ -108,18 +110,56 @@ class MyHomePage extends StatelessWidget {
               ),
               Expanded(
                 flex: 1,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                child: Column(
                   children: <Widget>[
-                    CircleAvatar(
-                      backgroundImage: NetworkImage(
-                          'https://tr3.cbsistatic.com/hub/i/r/2019/06/19/7af60099-f5e9-4273-a29b-cc5ef9332607/resize/1200x/557688f8f4918d630e420ab4124f670b/githero.jpg'),
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                      children: <Widget>[
+                        GestureDetector(
+                          child: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                              'https://pbs.twimg.com/profile_images/1157035760085684224/iuxTnT5g_400x400.jpg',
+                            ),
+                          ),
+                          onTap: () {
+                            html.window.open(
+                                "https://github.com/JerinFrancisA", "GitHub");
+                          },
+                        ),
+                        GestureDetector(
+                          child: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                              'https://pbs.twimg.com/profile_images/1068098089125171200/jwQJ5rLn.jpg',
+                            ),
+                          ),
+                          onTap: () {
+                            html.window.open(
+                                "https://twitter.com/jerinfrancis4", "Twitter");
+                          },
+                        ),
+                        GestureDetector(
+                          child: CircleAvatar(
+                            backgroundImage: NetworkImage(
+                              'https://pbs.twimg.com/profile_images/1111729635610382336/_65QFl7B.png',
+                            ),
+                          ),
+                          onTap: () {
+                            html.window.open(
+                                "https://github.com/JerinFrancisA", "GitHub");
+                          },
+                        ),
+                      ],
                     ),
-                    Text('github'),
-                    Text('linkedin'),
-                    Text('twitter'),
-                    Text('facebook'),
-                    Icon(Icons.add),
+                    SizedBox(
+                      height: 20,
+                    ),
+                    Text(
+                      'Jerin Francis ©️ 2019',
+                      textAlign: TextAlign.center,
+                      style: Theme.of(context).textTheme.body2.copyWith(
+                            color: Colors.grey,
+                          ),
+                    )
                   ],
                 ),
               ),
