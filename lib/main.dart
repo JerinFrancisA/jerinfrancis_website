@@ -74,15 +74,22 @@ class MyHomePage extends StatelessWidget {
                 flex: 6,
                 child: Row(
                   children: <Widget>[
-                    Container(
-                      decoration: BoxDecoration(
-                        //shape: BoxShape.circle,
-                        image: DecorationImage(
-                          image: AssetImage("assets/me.jpg"),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 24.0, right: 326.0),
+                      child: Container(
+                        width: 350.0,
+                        height: 350.0,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(200.0),
+                          // image: DecorationImage(
+                          //   image: AssetImage("me.jpg"),
+                          // ),
                         ),
-                      ),
-                      child: Image(
-                        image: AssetImage("assets/me.jpg"),
+                        child: Image(
+                          image: AssetImage("me.jpg"),
+                          fit: BoxFit.cover,
+                          colorBlendMode: BlendMode.luminosity,
+                        ),
                       ),
                     ),
                     Column(
@@ -145,7 +152,7 @@ class MyHomePage extends StatelessWidget {
                           ),
                           onTap: () {
                             html.window.open(
-                                "https://github.com/JerinFrancisA", "GitHub");
+                                "https://www.linkedin.com/in/jerinfrancis77/", "LinkedIn");
                           },
                         ),
                       ],
