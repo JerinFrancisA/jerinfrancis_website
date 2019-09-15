@@ -29,7 +29,7 @@ class MyHomePage extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
               Expanded(
-                flex: 1,
+                flex: 2,
                 child: TopMenu(),
               ),
               Padding(
@@ -37,11 +37,15 @@ class MyHomePage extends StatelessWidget {
                 child: Divider(),
               ),
               Expanded(
-                flex: 6,
+                flex: 10,
                 child: Body(),
               ),
+              Padding(
+                padding: const EdgeInsets.only(left: 48.0, right: 48.0, bottom: 16.0),
+                child: Divider(),
+              ),
               Expanded(
-                flex: 1,
+                flex: 2,
                 child: BottomMenu(),
               ),
             ],
