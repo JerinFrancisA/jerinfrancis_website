@@ -32,6 +32,10 @@ class MyHomePage extends StatelessWidget {
                 flex: 1,
                 child: TopMenu(),
               ),
+              Padding(
+                padding: const EdgeInsets.only(left: 48.0, right: 48.0),
+                child: Divider(),
+              ),
               Expanded(
                 flex: 6,
                 child: Body(),

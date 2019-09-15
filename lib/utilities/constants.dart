@@ -5,8 +5,8 @@ var kWebsiteThemeData = ThemeData(
   textTheme: TextTheme(
     headline: TextStyle(
       letterSpacing: 4.0,
-      fontSize: 50.0,
-      fontWeight: FontWeight.w300,
+      fontSize: 30.0,
+      fontWeight: FontWeight.w500,
     ),
     title: TextStyle(
       letterSpacing: 3.0,
@@ -14,7 +14,7 @@ var kWebsiteThemeData = ThemeData(
     ),
     body1: TextStyle(
       letterSpacing: 2.0,
-      fontSize: 20.0,
+      fontSize: 16.0,
     ),
     body2: TextStyle(
       letterSpacing: 2.0,

@@ -31,8 +31,8 @@ class BottomMenu extends StatelessWidget {
                 ),
               ),
               onTap: () {
-                html.window
-                    .open("https://twitter.com/jerinfrancis4", "Twitter");
+                html.window.open(
+                    "https://www.linkedin.com/in/jerinfrancis77/", "LinkedIn");
               },
             ),
             GestureDetector(
@@ -42,8 +42,8 @@ class BottomMenu extends StatelessWidget {
                 ),
               ),
               onTap: () {
-                html.window.open(
-                    "https://www.linkedin.com/in/jerinfrancis77/", "LinkedIn");
+                html.window
+                    .open("https://twitter.com/jerinfrancis4", "Twitter");
               },
             ),
           ],

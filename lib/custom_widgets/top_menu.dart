@@ -8,23 +8,36 @@ class TopMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+      mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: <Widget>[
-        Text(
-          'JERIN FRANCIS',
-          style: Theme.of(context).textTheme.headline,
+        Expanded(
+          flex: 3,
+          child: Text(
+            'JERIN FRANCIS',
+            style: Theme.of(context).textTheme.headline,
+            textAlign: TextAlign.center,
+          ),
         ),
-        Text(
-          'PROJECTS',
-          style: Theme.of(context).textTheme.body1,
+        Expanded(
+          flex: 1,
+          child: Text(
+            'PROJECTS',
+            style: Theme.of(context).textTheme.body1,
+          ),
         ),
-        Text(
-          'RESUME',
-          style: Theme.of(context).textTheme.body1,
+        Expanded(
+          flex: 1,
+          child: Text(
+            'RESUME',
+            style: Theme.of(context).textTheme.body1,
+          ),
         ),
-        Text(
-          'CONTACT',
-          style: Theme.of(context).textTheme.body1,
+        Expanded(
+          flex: 1,
+          child: Text(
+            'CONTACT',
+            style: Theme.of(context).textTheme.body1,
+          ),
         ),
       ],
     );
