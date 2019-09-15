@@ -1,6 +1,10 @@
 import 'dart:html' as html;
 
 import 'package:flutter_web/material.dart';
+import 'package:jerinfrancis_website/utilities/constants.dart';
+
+import 'custom_widgets/top_menu.dart';
+import 'custom_widgets/body.dart';
 
 void main() => runApp(MyApp());
 
@@ -10,28 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Jerin Francis',
-      theme: ThemeData(
-        fontFamily: 'GoogleSansRegular',
-        textTheme: TextTheme(
-          headline: TextStyle(
-            letterSpacing: 4.0,
-            fontSize: 50.0,
-            fontWeight: FontWeight.w300,
-          ),
-          title: TextStyle(
-            letterSpacing: 3.0,
-            fontSize: 25.0,
-          ),
-          body1: TextStyle(
-            letterSpacing: 2.0,
-            fontSize: 20.0,
-          ),
-          body2: TextStyle(
-            letterSpacing: 2.0,
-            fontSize: 10.0,
-          ),
-        ),
-      ),
+      theme: kWebsiteThemeData,
       home: MyHomePage(),
     );
   }
@@ -48,72 +31,11 @@ class MyHomePage extends StatelessWidget {
             children: <Widget>[
               Expanded(
                 flex: 1,
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: <Widget>[
-                    Text(
-                      'JERIN FRANCIS',
-                      style: Theme.of(context).textTheme.headline,
-                    ),
-                    Text(
-                      'PROJECTS',
-                      style: Theme.of(context).textTheme.body1,
-                    ),
-                    Text(
-                      'RESUME',
-                      style: Theme.of(context).textTheme.body1,
-                    ),
-                    Text(
-                      'CONTACT',
-                      style: Theme.of(context).textTheme.body1,
-                    ),
-                  ],
-                ),
+                child: TopMenu(),
               ),
               Expanded(
                 flex: 6,
-                child: Row(
-                  children: <Widget>[
-                    Padding(
-                      padding: const EdgeInsets.only(left: 24.0, right: 326.0),
-                      child: Container(
-                        width: 350.0,
-                        height: 350.0,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(200.0),
-                          // image: DecorationImage(
-                          //   image: AssetImage("me.jpg"),
-                          // ),
-                        ),
-                        child: Image(
-                          image: AssetImage("me.jpg"),
-                          fit: BoxFit.cover,
-                          colorBlendMode: BlendMode.luminosity,
-                        ),
-                      ),
-                    ),
-                    Column(
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                      children: <Widget>[
-                        Text(
-                          'Hey! I\'m Jerin Francis',
-                          style: Theme.of(context).textTheme.title,
-                        ),
-                        Text(
-                          'App Developer',
-                          style: Theme.of(context).textTheme.title,
-                        ),
-                        Text('Flutter and Dart enthusiast',
-                            style: Theme.of(context).textTheme.title),
-                        Text(
-                          'Student of Ramaiah Institute of Technology',
-                          style: Theme.of(context).textTheme.title,
-                        ),
-                      ],
-                    ),
-                  ],
-                ),
+                child: Body(),
               ),
               Expanded(
                 flex: 1,
@@ -152,7 +74,8 @@ class MyHomePage extends StatelessWidget {
                           ),
                           onTap: () {
                             html.window.open(
-                                "https://www.linkedin.com/in/jerinfrancis77/", "LinkedIn");
+                                "https://www.linkedin.com/in/jerinfrancis77/",
+                                "LinkedIn");
                           },
                         ),
                       ],
