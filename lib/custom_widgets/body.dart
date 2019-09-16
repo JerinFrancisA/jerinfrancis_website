@@ -1,4 +1,5 @@
 import 'package:flutter_web/material.dart';
+import 'package:animated_text_kit/animated_text_kit.dart';
 
 class Body extends StatelessWidget {
   const Body({
