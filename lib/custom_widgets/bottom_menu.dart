@@ -49,7 +49,7 @@ class BottomMenu extends StatelessWidget {
           ],
         ),
         SizedBox(
-          height: 20,
+          height: 16,
         ),
         Text(
           'Jerin Francis ©️ 2019',
