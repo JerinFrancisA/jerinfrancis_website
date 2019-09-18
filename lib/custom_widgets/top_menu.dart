@@ -21,6 +21,7 @@ class TopMenu extends StatelessWidget {
         Expanded(
           flex: 1,
           child: InkWell(
+            borderRadius: BorderRadius.circular(60.0),
             onTap: () {},
             onHover: (val) {
               print(val);
@@ -34,6 +35,7 @@ class TopMenu extends StatelessWidget {
         Expanded(
           flex: 1,
           child: InkWell(
+            borderRadius: BorderRadius.circular(60.0),
             onTap: () {},
             onHover: (val) {
               print(val);
@@ -47,10 +49,11 @@ class TopMenu extends StatelessWidget {
         Expanded(
           flex: 1,
           child: InkWell(
+            borderRadius: BorderRadius.circular(60.0),
             onTap: () {},
-            onHover: (val) {
-              print(val);
-            },
+            // onHover: (val) {
+            //   print(val);
+            // },
             child: Text(
               'CONTACT',
               style: Theme.of(context).textTheme.body1,
