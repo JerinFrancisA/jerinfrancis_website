@@ -15,8 +15,8 @@ class Body extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.only(left: 24.0, right: 26.0),
               child: Container(
-                width: 100,
-                height: 100.0,
+                width: 200.0,
+                height: 200.0,
                 decoration: BoxDecoration(
                   shape: BoxShape.circle,
                   image: DecorationImage(
