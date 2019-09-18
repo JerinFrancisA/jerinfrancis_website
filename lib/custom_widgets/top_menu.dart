@@ -20,23 +20,41 @@ class TopMenu extends StatelessWidget {
         ),
         Expanded(
           flex: 1,
-          child: Text(
-            'PROJECTS',
-            style: Theme.of(context).textTheme.body1,
+          child: InkWell(
+            onTap: () {},
+            onHover: (val) {
+              print(val);
+            },
+            child: Text(
+              'PROJECTS',
+              style: Theme.of(context).textTheme.body1,
+            ),
           ),
         ),
         Expanded(
           flex: 1,
-          child: Text(
-            'RESUME',
-            style: Theme.of(context).textTheme.body1,
+          child: InkWell(
+            onTap: () {},
+            onHover: (val) {
+              print(val);
+            },
+            child: Text(
+              'RESUME',
+              style: Theme.of(context).textTheme.body1,
+            ),
           ),
         ),
         Expanded(
           flex: 1,
-          child: Text(
-            'CONTACT',
-            style: Theme.of(context).textTheme.body1,
+          child: InkWell(
+            onTap: () {},
+            onHover: (val) {
+              print(val);
+            },
+            child: Text(
+              'CONTACT',
+              style: Theme.of(context).textTheme.body1,
+            ),
           ),
         ),
       ],
