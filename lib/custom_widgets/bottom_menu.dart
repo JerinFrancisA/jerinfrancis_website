@@ -46,6 +46,17 @@ class BottomMenu extends StatelessWidget {
                     .open("https://twitter.com/jerinfrancis4", "Twitter");
               },
             ),
+            GestureDetector(
+              child: CircleAvatar(
+                backgroundImage: NetworkImage(
+                  'https://podcreative.ca/wp-content/uploads/2017/11/Gmail-Logo.jpg',
+                ),
+              ),
+              onTap: () {
+                html.window
+                    .open("https://twitter.com/jerinfrancis4", "Gmail");
+              },
+            ),
           ],
         ),
         SizedBox(
