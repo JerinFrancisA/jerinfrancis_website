@@ -23,6 +23,8 @@ class BottomMenu extends StatelessWidget {
               onTap: () {
                 html.window.open("https://github.com/JerinFrancisA", "GitHub");
               },
+              radius: 50.0,
+              borderRadius: BorderRadius.circular(50.0),
             ),
             InkWell(
               child: CircleAvatar(
@@ -34,6 +36,8 @@ class BottomMenu extends StatelessWidget {
                 html.window.open(
                     "https://www.linkedin.com/in/jerinfrancis77/", "LinkedIn");
               },
+              radius: 50.0,
+              borderRadius: BorderRadius.circular(50.0),
             ),
             InkWell(
               child: CircleAvatar(
@@ -45,6 +49,8 @@ class BottomMenu extends StatelessWidget {
                 html.window
                     .open("https://twitter.com/jerinfrancis4", "Twitter");
               },
+              radius: 50.0,
+              borderRadius: BorderRadius.circular(50.0),
             ),
           ],
         ),
