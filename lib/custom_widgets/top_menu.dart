@@ -1,3 +1,5 @@
+import 'dart:html' as html;
+
 import 'package:flutter_web/material.dart';
 
 class TopMenu extends StatelessWidget {
@@ -12,10 +14,17 @@ class TopMenu extends StatelessWidget {
       children: <Widget>[
         Expanded(
           flex: 3,
-          child: Text(
-            'JERIN FRANCIS',
-            style: Theme.of(context).textTheme.headline,
-            textAlign: TextAlign.center,
+          child: InkWell(
+            borderRadius: BorderRadius.circular(60.0),
+            onTap: () {
+              html.window.open('https://jerinfrancisa.github.io', 'Jerin Francis');
+            },
+            onHover: (val) {},
+            child: Text(
+              'JERIN FRANCIS',
+              style: Theme.of(context).textTheme.headline,
+              textAlign: TextAlign.center,
+            ),
           ),
         ),
         Expanded(
@@ -23,9 +32,7 @@ class TopMenu extends StatelessWidget {
           child: InkWell(
             borderRadius: BorderRadius.circular(60.0),
             onTap: () {},
-            onHover: (val) {
-              print(val);
-            },
+            onHover: (val) {},
             child: Text(
               'PROJECTS',
               style: Theme.of(context).textTheme.body1,
@@ -37,9 +44,7 @@ class TopMenu extends StatelessWidget {
           child: InkWell(
             borderRadius: BorderRadius.circular(60.0),
             onTap: () {},
-            onHover: (val) {
-              print(val);
-            },
+            onHover: (val) {},
             child: Text(
               'RESUME',
               style: Theme.of(context).textTheme.body1,
@@ -51,9 +56,7 @@ class TopMenu extends StatelessWidget {
           child: InkWell(
             borderRadius: BorderRadius.circular(60.0),
             onTap: () {},
-            // onHover: (val) {
-            //   print(val);
-            // },
+            onHover: (val) {},
             child: Text(
               'CONTACT',
               style: Theme.of(context).textTheme.body1,
