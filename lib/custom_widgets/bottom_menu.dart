@@ -14,7 +14,7 @@ class BottomMenu extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceEvenly,
           children: <Widget>[
-            GestureDetector(
+            InkWell(
               child: CircleAvatar(
                 backgroundImage: NetworkImage(
                   'https://pbs.twimg.com/profile_images/1157035760085684224/iuxTnT5g_400x400.jpg',
@@ -24,7 +24,7 @@ class BottomMenu extends StatelessWidget {
                 html.window.open("https://github.com/JerinFrancisA", "GitHub");
               },
             ),
-            GestureDetector(
+            InkWell(
               child: CircleAvatar(
                 backgroundImage: NetworkImage(
                   'https://pbs.twimg.com/profile_images/1068098089125171200/jwQJ5rLn.jpg',
@@ -35,7 +35,7 @@ class BottomMenu extends StatelessWidget {
                     "https://www.linkedin.com/in/jerinfrancis77/", "LinkedIn");
               },
             ),
-            GestureDetector(
+            InkWell(
               child: CircleAvatar(
                 backgroundImage: NetworkImage(
                   'https://pbs.twimg.com/profile_images/1111729635610382336/_65QFl7B.png',
