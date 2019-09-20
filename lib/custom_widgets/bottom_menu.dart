@@ -53,8 +53,7 @@ class BottomMenu extends StatelessWidget {
                 ),
               ),
               onTap: () {
-                html.window
-                    .open("https://twitter.com/jerinfrancis4", "Gmail");
+                html.window.alert("To be updated soon");
               },
             ),
           ],

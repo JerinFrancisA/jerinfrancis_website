@@ -17,7 +17,8 @@ class TopMenu extends StatelessWidget {
           child: InkWell(
             borderRadius: BorderRadius.circular(60.0),
             onTap: () {
-              html.window.open('https://jerinfrancisa.github.io', 'Jerin Francis');
+              //html.window.open('https://jerinfrancisa.github.io', 'Jerin Francis');
+              html.window.alert("Home Page");
             },
             onHover: (val) {},
             child: Text(
@@ -31,7 +32,9 @@ class TopMenu extends StatelessWidget {
           flex: 1,
           child: InkWell(
             borderRadius: BorderRadius.circular(60.0),
-            onTap: () {},
+            onTap: () {
+              html.window.alert("To be updated soon");
+            },
             onHover: (val) {},
             child: Text(
               'PROJECTS',
@@ -43,7 +46,9 @@ class TopMenu extends StatelessWidget {
           flex: 1,
           child: InkWell(
             borderRadius: BorderRadius.circular(60.0),
-            onTap: () {},
+            onTap: () {
+              html.window.alert("To be updated soon");
+            },
             onHover: (val) {},
             child: Text(
               'RESUME',
@@ -55,7 +60,9 @@ class TopMenu extends StatelessWidget {
           flex: 1,
           child: InkWell(
             borderRadius: BorderRadius.circular(60.0),
-            onTap: () {},
+            onTap: () {
+              html.window.alert("To be updated soon");
+            },
             onHover: (val) {},
             child: Text(
               'CONTACT',
